@@ -28,7 +28,7 @@ public class RATsystem : PartModule
 
     public override void OnStart(PartModule.StartState state)
     {
-        RotateTransform = base.part.FindModelTransform(RotateTransformName);
+        RotateTransform = base.part.FindModelTransforms(RotateTransformName);
         minDynPre = (0.5 * minAtmDen * (minSpeed * minSpeed)) / 1000;
     }
 
